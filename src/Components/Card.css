@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root{
+    --main-color--card:rgb(253, 185, 39);
+    --main-color--text: rgb(0, 0, 30);
+    --main-color--text-alternate: rgb(85, 37, 130);
+    --main-font: 'Besley', serif;
+}
+
+*
+{
+    color: var(--main-color--text);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Besley',serif;
+}
+
+
+.card-container{
+    min-width: 300px;
+    min-height: 500px;
+    border: 1px solid black;
+    display:grid;
+    grid-template-columns: repeat(2, minmax(50%, 50%));
+    grid-template-rows: minmax(70%,70%) repeat(3, minmax(10%, 10%));
+    grid-template-areas:
+    "image image"
+    "name name"
+    "team position"
+    "buttonScore buttonScore"
+    ;
+
+    background-color: var(--main-color--card);
+    background-size: 200vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px;
+    position:absolute;
+    overflow: hidden;
+
+
+    /*Box Shadow*/
+    box-shadow: 0px 0px 45px -1px rgba(0,0,0,0.78);
+    -webkit-box-shadow: 0px 0px 45px -1px rgba(0,0,0,0.78);
+    -moz-box-shadow: 0px 0px 45px -1px rgba(0,0,0,0.78);
+}
+
+.card-container .card-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: team;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+}
+.card-container .card-position {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    grid-area: position;
+    font-weight: bold;
+    font-family: 'Besley',serif;
+}
+.card-container .card-name{
+    grid-area: name;
+    font-family: 'Besley',serif;
+    font-size: 2em;
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    /* overflow-: hidden; */
+}
+.card-container img{
+
+    grid-area:image;
+    height: 100%;
+    width: 100%;
+    object-fit:100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-right: 2px solid var(--main-color--text);
+    border-bottom: 2px solid var(--main-color--text);
+    border-bottom-right-radius: 10px;
+    left: 10;
+    width: 90%;
+    height: 100%;
+
+}
+/* .card-container .button-handler {
+    grid-area: button;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+} */
+
+.card-container .score{
+    grid-area: buttonScore;
+    width: 100%;
+    height: 100%;
+}

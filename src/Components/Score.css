@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root{
+    --main-color--card:rgb(253, 185, 39);
+    --main-color--text: rgb(0, 0, 30);
+    --main-color--text-alternate: rgb(85, 37, 130);
+    --main-font: 'Besley', serif;
+}
+
+*
+{
+    color: var(--main-color--text);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Besley',serif;
+}
+
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;    
+    width: 100%;
+    height: 100%;
+    font-size: 8px;
+}
+.score .score-container {
+    display: flex;
+    font-size: 1.5em;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.score div  {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}

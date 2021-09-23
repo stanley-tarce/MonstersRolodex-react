@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root{
+    --main-color--card:rgb(253, 185, 39);
+    --main-color--text: rgb(0, 0, 30);
+    --main-color--text-alternate: rgb(85, 37, 130);
+    --main-color--text-alternate-2: rgb(255, 255,255);
+    --main-font: 'Besley', serif;
+}
+
+button
+{
+    font-size: 1.5em;
+    font-family: var(--main-font);
+    color: var(--main-color--text-alternate-2);
+    background-color: var(--main-color--text-alternate);
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+button:hover{
+    background-color: var(--main-color--card);
+}

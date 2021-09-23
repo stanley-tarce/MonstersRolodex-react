@@ -1,0 +1,9 @@
+.button {
+  background-color: hsl(180, 48%, 72%);
+  border: 1px solid grey;
+  border-radius: 0px;
+  padding: 5px;
+}
+.button:hover {
+  background-color: hsl(180, 48%, 45%);
+}

@@ -1,0 +1,17 @@
+.CardList {
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+@media screen and (max-width: 768px) {
+  /* .CardList {
+    grid-template-columns: repeat(2, 1fr);
+  } */
+}
