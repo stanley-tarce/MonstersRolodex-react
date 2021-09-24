@@ -7,6 +7,7 @@ function Button({ point, setScore }) {
             className={"button"}
             onClick={() => { setScore(point) }}>
             {point !== 0 ? `${point} Point` : `Reset`}
+
         </button >
     )
 }
